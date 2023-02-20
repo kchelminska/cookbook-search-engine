@@ -9,13 +9,20 @@ html{
 }
 
 body{
-    display: flex;
-    flex-direction: column;
-    background-image: url(/image/background_image.jpg);
+    background-image: url(/image/background-image.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment:fixed;
+    min-height: 100vh;
 }
+
+header{
+    display: flex;
+    flex-direction: column;
+    height: 25vh;
+    min-height: 200px;
+}
+
 
 h1{
     font-size: 7rem;
@@ -38,9 +45,8 @@ input{
     padding-left: 10px;
 }
 .wrapper{
- margin-top: 20px;
- background-color: rgba(255, 255, 255, 0.3);
- 
+    min-height: 70vh;
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .recipe--list{
@@ -51,7 +57,8 @@ input{
 }
 
 .receipe{
-    width: 300px;
+    display: flex;
+    /* width: 300px; */
     height: 300px;
     margin: 20px;
     background-color: #fff;
@@ -59,8 +66,17 @@ input{
     box-shadow: 0px 0px 20px black; 
 }
 
+section .img{
+    background-image: url(../image/product-1.webp);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 300px;
+}
+
 img{
-    height: 80%;
+    height: 250px;
     width: auto;
     background-color: gray;
     overflow: hidden;
@@ -77,8 +93,6 @@ h2{
 h3{
     color: gray;
 }
-
-
 
 footer{
     background-color: black;

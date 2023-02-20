@@ -11,57 +11,66 @@
     <title>Cookbook</title>
 </head>
 <body>
-    <h1>Your Cookbook:</h1>
-    <input type="text" placeholder="What would you like to cook?">
-    <input type="text" placeholder="what kind of cuisine are you looking for?">
-    
+    <header>
+        <h1>Your Cookbook:</h1>
+        <form>
+            <input type="text" id="search-dish" placeholder="What would you like to cook?" onkeyup="searchDish()">
+        </form>
+    </header>
     <div class="wrapper">
-        <div class="recipe--list">
+        <div class="recipe--list" id="recipe--list">
+
             <div class="receipe">
-                <img src="/image/product_1.jpg" alt="">
-                <h2>Goulash soup</h2>
-                <h3>with meat</h3>
+                <section>
+                    <div class="img"></div>
+                    <!-- <img src="/image/product_1.webp" alt=""> -->
+                    <h2>Goulash soup</h2>
+                    <h3>with meat</h3>
+                </section>
+                <section>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, labore, optio, eos nemo animi tempora vitae deleniti voluptatum non beatae dolore eligendi doloribus repellendus ipsam exercitationem autem sed aliquam dicta.</p>
+                    <article>
+                        <h4>Time</h4>
+                        <h4>easy</h4>
+                    </article>
+                </section>
             </div>
+
             <div class="receipe">
-                <img src="/image/product_2.jpg" alt="">
+                <img src="/image/product-2.webp" alt="">
                 <h2>Penne pasta in tomato sauce</h2>
                 <h3>vegan</h3>
             </div>
             <div class="receipe">
-                <img src="/image/product_3.jpg" alt="">
+                <img src="/image/product-3.webp" alt="">
                 <h2>Salad with muschroms</h2>
                 <h3>vegan</h3>
             </div>
             <div class="receipe">
-                <img src="/image/product_4.jpg" alt="">
+                <img src="/image/product-4.webp" alt="">
                 <h2>Grilled chicken breast</h2>
                 <h3>with meat</h3>
             </div>
             <div class="receipe">
-                <img src="/image/product_1.jpg" alt="">
-                <h2>Goulash soup</h2>
+                <img src="/image/product-5.webp" alt="">
+                <h2>curry with chicken</h2>
                 <h3>with meat</h3>
             </div>
             <div class="receipe">
-                <img src="/image/product_2.jpg" alt="">
-                <h2>Penne pasta in tomato sauce</h2>
-                <h3>vegan</h3>
-            </div>
-            <div class="receipe">
-                <img src="/image/product_3.jpg" alt="">
-                <h2>Salad with muschroms</h2>
-                <h3>vegan</h3>
-            </div>
-            <div class="receipe">
-                <img src="/image/product_4.jpg" alt="">
-                <h2>Grilled chicken breast</h2>
+                <img src="/image/product-6.webp" alt="">
+                <h2>Pizza with salami</h2>
                 <h3>with meat</h3>
             </div>
             <div class="receipe">
-                <img src="/image/product_2.jpg" alt="">
-                <h2>Penne pasta in tomato sauce</h2>
+                <img src="/image/product-7.webp" alt="">
+                <h2>Belgium waffles with strawberries and ice cream</h2>
                 <h3>vegan</h3>
-            </div>            
+            </div>
+            <div class="receipe">
+                <img src="/image/product-8.webp" alt="">
+                <h2>pancakes with chocolate and jam berries</h2>
+                <h3>vegan</h3>
+            </div>          
         </div>
     </div> 
     <footer>
@@ -69,7 +78,12 @@
         <a href="https://www.freepik.com/free-photo/italian-food-background-with-spaghetti-spices-sauce-view_28492236.htm#page=3&query=food%20walpaper&position=43&from_view=search&track=ais">Image by valeria_aksakova</a> on Freepik | <a href="https://www.freepik.com/free-photo/goulash-soup-wood_4833190.htm#query=food&from_query=foof&position=41&from_view=search&track=sph">Image by jcomp</a> on Freepik | 
         <a href="https://www.freepik.com/free-photo/penne-pasta-tomato-sauce-with-chicken-tomatoes-wooden-table_7677643.htm#query=food&position=4&from_view=search&track=sph">Image by timolina</a> on Freepik | 
         <a href="https://www.freepik.com/free-photo/dietary-menu-healthy-vegan-salad-vegetables-broccoli-mushrooms-spinach-quinoa-bowl-flat-lay-top-view_7701184.htm#query=food&position=9&from_view=search&track=sph">Image by timolina</a> on Freepik | 
-        <a href="https://www.freepik.com/free-photo/grilled-chicken-breast-fresh-vegetable-salad-tomatoes-cucumbers-lettuce-leaves-chicken-salad-healthy-food-flat-lay-top-view_6572005.htm#from_view=detail_alsolike">Image by timolina</a> on Freepik
+        <a href="https://www.freepik.com/free-photo/grilled-chicken-breast-fresh-vegetable-salad-tomatoes-cucumbers-lettuce-leaves-chicken-salad-healthy-food-flat-lay-top-view_6572005.htm#from_view=detail_alsolike">Image by timolina</a> on Freepik |
+        <a href="https://www.freepik.com/free-photo/pancakes-with-chocolate-jam-berries-tasty-breakfast_7122710.htm#&position=16&from_view=author">Image by timolina</a> on Freepik |
+        <a href="https://www.freepik.com/free-photo/belgium-waffles-with-strawberries-ice-cream-white-plate_7121187.htm#page=3&position=31&from_view=author">Image by timolina</a> on Freepik |
+        <a href="https://www.freepik.com/free-photo/pizza-with-salami-tomatoes-olives-cheese-dough-with-whole-wheat-flour-italian-food_6731118.htm#&position=11&from_view=author">Image by timolina</a> on Freepik |
+        <a href="https://www.freepik.com/free-photo/curry-with-chicken-onions-indian-food-asian-cuisine_6572209.htm#&position=31&from_view=author">Image by timolina</a> on Freepik
     </footer>   
+    <script src="/script/main.js"></script>
 </body>
 </html>
